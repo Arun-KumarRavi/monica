@@ -1,0 +1,20 @@
+# Default values for accounts-dashboard.
+replicaCount: 1
+
+frontend:
+  image:
+    repository: arunkumarravi08/accounts-receivable-frontend
+    tag: latest
+    pullPolicy: Always
+  service:
+    type: LoadBalancer
+    port: 80
+
+backend:
+  image:
+    repository: arunkumarravi08/accounts-receivable-backend
+    tag: latest
+    pullPolicy: Always
+  service:
+    type: ClusterIP
+    port: 5000
