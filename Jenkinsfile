@@ -12,7 +12,7 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
         
         // --- AWS/EKS Config ---
-        CLUSTER_NAME = 'Accounts-recievable'
+        CLUSTER_NAME = 'devops-eks'
         REGION = 'us-east-1'
     }
 
